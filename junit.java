@@ -1,5 +1,5 @@
 public class junit{
-    public static void main(string[] args){
-        system.out.println("hello");
+    public static void main(String[] args){
+        System.out.println("hello");
     }
 }
