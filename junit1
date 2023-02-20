@@ -1,0 +1,29 @@
+pipeline{
+    agent any
+    stages{
+        stage ("prepararion"){
+            steps{
+                git branch: 'main',
+                url: 'https://gitlab.com/ajaykumarreddy366/junit.git',
+                credentialsId: 'jayreddy2407'
+                sh 'javac junit.java'
+                sh 'java junit'
+            }
+        }
+        stage('build') {
+            steps {
+                echo "build started"
+                echo "ended"
+            }
+        }
+        stage('test') {
+            steps {
+                echo "test started"
+                echo "ended"
+            }
+        }
+    }
+}
+        
+
+
