@@ -6,8 +6,8 @@ pipeline{
                 git branch: 'main',
                 url: 'https://gitlab.com/ajaykumarreddy366/junit.git',
                 credentialsId: 'jayreddy2407'
-                sh 'javac junit.java'
-                sh 'java junit'
+                sh 'javac a.java'
+                sh 'java a'
             }
         }
         
